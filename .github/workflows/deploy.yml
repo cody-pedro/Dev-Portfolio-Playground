@@ -1,16 +1,14 @@
-name: Deploy Character Lore Generator to Github Pages
+name: Deploy Character Lore Generator to GitHub Pages
 
 on:
   push:
     branches:
-      - main # default branch
+      - main  # your default branch
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
-jobs: 
+jobs:
   deploy:
     runs-on: ubuntu-latest
 
@@ -21,5 +19,5 @@ jobs:
       - name: Deploy subfolder to gh-pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: charater-lore
-          folder: Character-Lore-Generator
+          branch: character-lore                  # target branch for Pages
+          folder: Character-Lore-Generator  # your subfolder with index.html
