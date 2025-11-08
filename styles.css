@@ -1,2 +1,4 @@
-﻿body {
+﻿form {
+    display: grid;
+    align-content: safe center;
 }
