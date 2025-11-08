@@ -29,7 +29,7 @@ function generateLore({ race, charClass, background, personality, tragedy }) {
 
 // Once DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
-    const form = document.getElementById('lore-form');
+    const form = document.getElementById('character-form');
     const result = document.getElementById('result');
 
     form.addEventListener('submit', (e) => {
@@ -44,7 +44,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const lore = generateLore({
             race: formData.get('race'),
-            charClass: formData.get('charClass'),
+            charClass: formData.get('class'),
+            background: formData.get('background'),
             personality: formData.get('personality'),
             tragedy: formData.get('tragedy'),
         });
