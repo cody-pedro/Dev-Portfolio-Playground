@@ -1,2 +1,111 @@
-# Ignore Visual Studio cache and settings
+####################################
+#   OS-SPECIFIC FILES
+####################################
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+####################################
+#   EDITORS / IDEs
+####################################
+
+# VS Code
+.vscode/
+.history/
+*.code-workspace
+
+# Visual Studio
 .vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# JetBrains (just in case)
+.idea/
+*.iml
+
+####################################
+#   FRONTEND / WEB PROJECTS
+####################################
+
+# Dependency directories
+node_modules/
+
+# Build output
+dist/
+build/
+.cache/
+.temp/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+####################################
+#   BACKEND (.NET / C#) PROJECTS
+####################################
+
+# Build directories
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Tt]est[Rr]esult*/
+
+# Visual Studio database / profiler
+*.pdb
+*.cache
+*.mdb
+*.opendb
+*.VC.db
+*.VC.VC.opendb
+
+# Publish outputs
+publish/
+wwwroot/
+
+####################################
+#   MISCELLANEOUS
+####################################
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.lock
+
+# Coverage / test output
+coverage/
+*.coverage
+*.coveragexml
+TestResults/
+
+# Package managers
+package-lock.json
+yarn.lock
+
+####################################
+#   JSON / CONFIG
+####################################
+
+# Ignore compiled or runtime-generated JSON
+*.json.backup
+*.json.tmp
+*.json.lock
