@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>D&amp;D Character Lore Generator</title>
+
+        <link rel="stylesheet" href="styles.css" />
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <h1>Character-Lore Generator</h1>
+
+        <form id="character-form" action="/submit_form">
+            <label for="race">What Race is your character?</label>
+            <select id="race" name="race">
+                <option value="human">Human</option>
+                <option value="elf">Elf</option>
+                <option value="dwarf">Dwarf</option>
+                <option value="halfling">Halfling</option>
+                <option value="tiefling">Tiefling</option>
+                <option value="dragonborn">Dragonborn</option>
+                <option value="orc">Orc</option>
+                <option value="half-elf">Half-Elf</option>
+            </select>
+            <label for="class">What Class is your character?</label>
+            <select id="class" name="class">
+                <option value="fighter">Fighter</option>
+                <option value="rogue">Rogue</option>
+                <option value="wizard">Wizard</option>
+                <option value="cleric">Cleric</option>
+                <option value="warlock">Warlock</option>
+                <option value="paladin">Paladin</option>
+                <option value="bard">Bard</option>
+            </select>
+            <label for="background">What background/origin type would you like?</label>
+            <select id="background" name="background">
+                <option value="soldier">Soldier</option>
+                <option value="noble">Noble</option>
+                <option value="urchin">Urchin</option>
+                <option value="acolyte">Acolyte</option>
+                <option value="criminal">Criminal</option>
+                <option value="artisan">Artisan</option>
+                <option value="hermit">Hermit</option>
+            </select>
+            <label for="personality">What is your characters personality/vibe?</label>
+            <select id="personality" name="personality">
+                <option value="hopeful">Hopeful</option>
+                <option value="brooding">Brooding</option>
+                <option value="stoic">Stoic</option>
+                <option value="chaotic">Chaotic</option>
+                <option value="honorable">Honorable</option>
+                <option value="vengeful">Vengeful</option>
+            </select>
+            <label for="darkness">What is your characters level of darkness/tragedy</label>
+            <select id="darkness" name="darkness">
+                <option value="light">Light</option>
+                <option value="balanced">Balanced</option>
+                <option value="dark">Dark</option>
+            </select>
+            <input type="submit" value="Submit" />
+        </form>
+
+    </body>
+</html>
