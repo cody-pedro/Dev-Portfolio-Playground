@@ -1,4 +1,21 @@
-﻿form {
+﻿body {
+    text-align: center;
+}
+
+form {
     display: grid;
-    align-content: safe center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    
+}
+
+form label {
+    text-align: left;
+}
+
+form select {
+    max-width: 10vw;
+    margin-left: 5vw;
+    margin-bottom: 2vh;
+    margin-top: .5vh;
 }
